@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="icon" type="image/x-icon" href="/images/fox_web_fire_website_webpage_browser_icon_233852.ico">
         <meta name="description" content="">
         <meta name="author" content="Tooplate">
 
-        <title>Waso Strategy - Bootstrap 5 HTML Template</title>
+        <title>Waso Strategy </title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +23,105 @@
         <link href="css/magnific-popup.css" rel="stylesheet">
 
         <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
-        
-<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  
 
-Tooplate 2130 Waso Strategy
+        <style>
 
-https://www.tooplate.com/view/2130-waso-strategy
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2);
+}
 
-Free Bootstrap 5 HTML Template
+.btn-social {
+    position: relative;
+    padding-left: 44px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
--->
+.btn-social:hover {
+    color: #eee;
+}
 
+.btn-social :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    padding: 9px;
+    font-size: 1em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+        </style>
+<style>
+    #snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #1aa71a;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 10000000;
+      left: 50%;
+      bottom: 30px;
+      font-size: 17px;
+    }
+    
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+    
+    @-webkit-keyframes fadein {
+      from {bottom: 0; opacity: 0;} 
+      to {bottom: 30px; opacity: 1;}
+    }
+    
+    @keyframes fadein {
+      from {bottom: 0; opacity: 0;}
+      to {bottom: 30px; opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout {
+      from {bottom: 30px; opacity: 1;} 
+      to {bottom: 0; opacity: 0;}
+    }
+    
+    @keyframes fadeout {
+      from {bottom: 30px; opacity: 1;}
+      to {bottom: 0; opacity: 0;}
+    }
+    </style>
     </head>
     
     <body id="section_1">
-
+        <div id="snackbar">Login success!</div>
         <header class="site-header">
             <div class="container">
                 <div class="row align-items-center">
@@ -86,7 +170,7 @@ Free Bootstrap 5 HTML Template
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1"><small class="small-title"><strong class="text-warning">02</strong></small> Home</a>
+                            <a class="nav-link click-scroll" href="#section_1"><small class="small-title"><strong class="text-warning">01</strong></small> Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -100,9 +184,14 @@ Free Bootstrap 5 HTML Template
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_4"><small class="small-title"><strong class="text-warning">04</strong></small> Projects</a>
                         </li>
-
+                        
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5"><small class="small-title"><strong class="text-warning">05</strong></small> Contact</a>
+                          
+                                <div class="container" onclick="myFunction()">
+                                <a class="btn btn-lg btn-social btn-facebook">
+                                <i class="bi-facebook"></i> Sign in with Facebook
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 <div>
@@ -229,7 +318,7 @@ Free Bootstrap 5 HTML Template
                                         <div class="about-info">
                                             <h5 class="text-white mb-4">How did you about us?</h5>
 
-                                            <p class="text-white mb-0">Lorem ipsum dolor sit consectetur</p>
+                                            <p class="text-white mb-0">Waso Strategy is a Bootstrap 5 HTML template for your business. You may use this template for any purpose. You may not redistribute the template ZIP file on any other websit</p>
                                         </div>
                                     </div>
                                 </div>
@@ -257,19 +346,21 @@ Free Bootstrap 5 HTML Template
                                     <button class="nav-link active" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
                                         <h3>Business Consulting</h3>
 
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                        <span>Because we build product for speed & performance optimization
+                                            without asking you do any modification necessary</span>
                                     </button>
 
                                     <button class="nav-link" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
                                         <h3>Strategy Planning</h3>
                                         
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                        <span>Always Latest Technologies </span>
                                     </button>
 
                                     <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
                                         <h3>Video Content</h3>
                                         
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</span>
+                                        <span>30+ feature-instructional videos that help you to control
+                                            your store at hand. New videos will be updated.</span>
                                     </button>
                                 </div>
                             </nav>
@@ -282,7 +373,7 @@ Free Bootstrap 5 HTML Template
 
                                     <h5 class="mt-4 mb-2">Introduction to Business Consulting</h5>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</p>
+                             
 
                                     <ul>
                                         <li>Helping small businesses</li>
@@ -300,11 +391,12 @@ Free Bootstrap 5 HTML Template
 
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                                            <p>The product of strategic planning is a strategic plan.</p>
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                                            <p>It is often reflected in a plan document or other media.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -314,7 +406,8 @@ Free Bootstrap 5 HTML Template
 
                                     <h5 class="mt-4 mb-2">Video Content</h5>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore</p>
+                                    <p>Instantly Improve Conversions
+                                        by 120% in a day</p>
                                 </div>
 
 
@@ -523,7 +616,7 @@ Free Bootstrap 5 HTML Template
                         
                     <div class="col-lg-6 col-12">
                         <div class="site-footer-wrap d-flex align-items-center">
-                            <p class="copyright-text mb-0 me-4">Copyright © 2036 Waso Strategy Co., Ltd.</p>
+                            <p class="copyright-text mb-0 me-4">Copyright © 2019 Waso Strategy Co., Ltd.</p>
 
                             <ul class="social-icon">
                                 <li><a href="https://facebook.com/tooplate" class="social-icon-link bi-facebook"></a></li>
@@ -538,9 +631,7 @@ Free Bootstrap 5 HTML Template
                         </div>
                     </div>
                     
-                    <div class="col-lg-6 col-12">
-                    	<p class="copyright-text mb-0 me-4">Waso HTML Template is designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
-                    </div>
+                   
 
                 </div>
             </div>
@@ -554,6 +645,18 @@ Free Bootstrap 5 HTML Template
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            function myFunction() {
+             
+              var x = document.getElementById("snackbar");
+              var y = document.getElementsByClassName(".btn-social");
+              console.log(x)
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+              setTimeout(function(){ window.location.href ="/dashboard.html";}, 5000);
+              
+            }
+            </script>
     </body>
 </html>
