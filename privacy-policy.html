@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/fox_web_fire_website_webpage_browser_icon_233852.ico"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+
+    <title>Waso Strategy</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+
+    <link href="css/tooplate-waso-strategy.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .btn-facebook {
+        color: #fff;
+        background-color: #3b5998;
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-social {
+        position: relative;
+        padding-left: 44px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .btn-social:hover {
+        color: #eee;
+      }
+
+      .btn-social :first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        padding: 9px;
+        font-size: 1em;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      #snackbar {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        min-width: 250px; /* Set a default minimum width */
+        margin-left: -125px; /* Divide value of min-width by 2 */
+        background-color: #333; /* Black background color */
+        color: #fff; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 2px; /* Rounded borders */
+        padding: 16px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 50%; /* Center the snackbar */
+        bottom: 30px; /* 30px from the bottom */
+      }
+    </style>
+    <style>
+      #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #1aa71a;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 10000000;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+      }
+
+      #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      @-webkit-keyframes fadein {
+        from {
+          bottom: 0;
+          opacity: 0;
+        }
+        to {
+          bottom: 30px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          bottom: 0;
+          opacity: 0;
+        }
+        to {
+          bottom: 30px;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeout {
+        from {
+          bottom: 30px;
+          opacity: 1;
+        }
+        to {
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+
+      @keyframes fadeout {
+        from {
+          bottom: 30px;
+          opacity: 1;
+        }
+        to {
+          bottom: 0;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body id="section_1">
+    <div id="snackbar">Login success!</div>
+    <header class="site-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-5 col-7">
+            <p class="text-white mb-0">
+              <i class="bi-clock site-header-icon me-2"></i>
+              Mon-Fri 10:00-19:00
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-5">
+            <p class="text-white mb-0">
+              <a href="tel: 240-480-9600" class="text-white">
+                <i class="bi-telephone site-header-icon me-2"></i>
+                240-480-9600
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-12 ms-auto">
+            <ul class="social-icon">
+              <li>
+                <a
+                  href="https://facebook.com/tooplate"
+                  class="social-icon-link bi-facebook"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://pinterest.com/tooplate"
+                  class="social-icon-link bi-pinterest"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://twitter.com/minthu"
+                  class="social-icon-link bi-twitter"
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com/tooplate"
+                  class="social-icon-link bi-youtube"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+      <div class="container"></div>
+    </nav>
+
+    <main>
+      <div class="row container">
+        <div
+          class="small-24 medium-16 large-19 columns medium-up-column-divider"
+        >
+          <h3>Sample Privacy Policy</h3>
+          <p>
+            <span>&nbsp;</span
+            ><span style="font-weight: lighter"
+              >We are committed to maintaining the accuracy, confidentiality,
+              and security of your personally identifiable information
+              ("Personal Information"). As part of this commitment, our privacy
+              policy governs our actions as they relate to the collection, use
+              and disclosure of Personal Information. Our privacy policy is
+              based upon the values set by the Canadian Standards Association's
+              Model Code for the Protection of Personal Information and Canada's </span
+            ><em style="font-weight: lighter"
+              >Personal Information Protection</em
+            ><span style="font-weight: lighter"> </span
+            ><em style="font-weight: lighter">and Electronic Documents Act</em
+            ><span style="font-weight: lighter">.</span>
+          </p>
+          <p>
+            <span
+              ><strong><span>1. Introduction</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >We are responsible for maintaining and protecting the Personal
+              Information under our control. We have designated an individual or
+              individuals who is/are responsible for compliance with our privacy
+              policy.</span
+            >
+          </p>
+          <p>
+            <span><br /> </span>
+          </p>
+          <p>
+            <span
+              ><strong><span>2. Identifying Purposes</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >We collect, use and disclose Personal Information to provide you
+              with the product or service you have requested and to offer you
+              additional products and services we believe you might be
+              interested in. The purposes for which we collect Personal
+              Information will be identified before or at the time we collect
+              the information. In certain circumstances, the purposes for which
+              information is collected may be clear, and consent may be implied,
+              such as where your name, address and payment information is
+              provided as part of the order process.</span
+            >
+          </p>
+          <p>
+            <span>&nbsp;</span><span style="font-weight: lighter">&nbsp;</span>
+          </p>
+          <p>
+            <span
+              ><strong><span>3. Consent</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >Knowledge and consent are required for the collection, use or
+              disclosure of Personal Information except where required or
+              permitted by law. Providing us with your Personal Information is
+              always your choice. However, your decision not to provide certain
+              information may limit our ability to provide you with our products
+              or services. We will not require you to consent to the collection,
+              use, or disclosure of information as a condition to the supply of
+              a product or service, except as required to be able to supply the
+              product or service.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong><span>4. Limiting Collection</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >The Personal Information collected will be limited to those
+              details necessary for the purposes identified by us. With your
+              consent, we may collect Personal Information from you in person,
+              over the telephone or by corresponding with you via mail,
+              facsimile, or the Internet.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong
+                ><span>5. Limiting Use, Disclosure and Retention</span></strong
+              ></span
+            >
+          </p>
+          <p>
+            <span
+              >Personal Information may only be used or disclosed for the
+              purpose for which it was collected unless you have otherwise
+              consented, or when it is required or permitted by law. Personal
+              Information will only be retained for the period of time required
+              to fulfill the purpose for which we collected it or as may be
+              required by law.
+              <strong
+                >[If applicable, include a description of any parties</strong
+              >
+              <strong
+                >with whom you may share Personal Information.]</strong
+              ></span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong><span>6. Accuracy</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >Personal Information will be maintained in as accurate, complete
+              and up-to-date form as is necessary to fulfill the purposes for
+              which it is to be used.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span>&nbsp;</span
+            ><strong>7. Safeguarding Customer Information</strong>
+          </p>
+          <p>
+            <span
+              >Personal Information will be protected by security safeguards
+              that are appropriate to the sensitivity level of the information.
+              We take all reasonable precautions to protect your Personal
+              Information from any loss or unauthorized use, access or
+              disclosure.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong><span>8. Openness</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              >We will make information available to you about our policies and
+              practices with respect to the management of your Personal
+              Information.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong><span>9. Customer Access</span></strong></span
+            >
+          </p>
+          <p>
+            <span style="font-weight: lighter"
+              >Upon request, you will be informed of the existence, use and
+              disclosure of your Personal Information, and will be given access
+              to it. You may verify the accuracy and completeness of your
+              Personal Information, and may request that it be amended, if
+              appropriate. However, in certain circumstances permitted by law,
+              we will not disclose certain information to you. For example, we
+              may not disclose information relating to you if other individuals
+              are referenced or if there are legal, security or commercial
+              proprietary restrictions.</span
+            >
+          </p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <strong>10. Handling Customer Complaints and Suggestions</strong
+            ><span style="font-weight: lighter">&nbsp;</span>
+          </p>
+          <p>
+            <span
+              >You may direct any questions or enquiries with respect to our
+              privacy policy or our practices by</span
+            >
+          </p>
+          <p><span>contacting:</span></p>
+          <p><span>&nbsp;</span></p>
+          <p><span>[Contact Information]</span></p>
+          <p><span>&nbsp;</span></p>
+          <p>
+            <span
+              ><strong><span>Additional Information</span></strong></span
+            >
+          </p>
+          <p>
+            <span
+              ><strong><span>&nbsp;</span></strong></span
+            >
+          </p>
+          <p>
+            <em
+              ><span
+                ><strong><span>Cookies</span></strong></span
+              ></em
+            >
+          </p>
+          <p>
+            <span
+              >A cookie is a small computer file or piece of information that
+              may be stored in your computer's hard drive when you visit our
+              websites. We may use cookies to improve our website’s
+              functionality and in some cases, to provide visitors with a
+              customized online experience.</span
+            >
+          </p>
+          <p>
+            <span
+              >Cookies are widely used and most web browsers are configured
+              initially to accept cookies automatically. You may change your
+              Internet browser settings to prevent your computer from accepting
+              cookies or to notify you when you receive a cookie so that you may
+              decline its acceptance. Please note, however, if you disable
+              cookies, you may not experience optimal performance of our
+              website.</span
+            >
+          </p>
+          <p>
+            <em
+              ><span
+                ><strong><span>&nbsp;</span></strong></span
+              ></em
+            >
+          </p>
+          <p>
+            <em
+              ><span
+                ><strong><span>Other Websites</span></strong></span
+              ></em
+            >
+          </p>
+          <p>
+            <span
+              >Our website may contain links to other third party sites that are
+              not governed by this privacy policy. Although we endeavour to only
+              link to sites with high privacy standards, our privacy policy will
+              no longer apply once you leave our website. Additionally, we are
+              not responsible for the privacy practices employed by third party
+              websites. Therefore, we suggest that you examine the privacy
+              statements of those sites to learn how your information may be
+              collected, used, shared and disclosed.</span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="site-footer-wrap d-flex align-items-center">
+              <p class="copyright-text mb-0 me-4">
+                Copyright © 2019 Waso Strategy Co., Ltd.
+              </p>
+
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://facebook.com/tooplate"
+                    class="social-icon-link bi-facebook"
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pinterest.com/tooplate"
+                    class="social-icon-link bi-pinterest"
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://twitter.com/minthu"
+                    class="social-icon-link bi-twitter"
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.youtube.com/tooplate"
+                    class="social-icon-link bi-youtube"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("snackbar");
+        var y = document.getElementsByClassName(".btn-social");
+        console.log(x);
+        x.className = "show";
+        setTimeout(function () {
+          x.className = x.className.replace("show", "");
+        }, 3000);
+        setTimeout(function () {
+          window.location.href = "/dashboard.html";
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>
